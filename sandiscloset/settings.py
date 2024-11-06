@@ -127,3 +127,8 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+# Static files (CSS, JavaScript, Images)
+STATICFILES_DIRS = [BASE_DIR / 'static']  # If you have a static folder in your project
+STATIC_ROOT = BASE_DIR / 'staticfiles'    # For collecting static files in production

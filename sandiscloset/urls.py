@@ -25,6 +25,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('sandiscloset/', include('users.urls')),  # Include your users app URLs
     path('products/', include('products.urls')),
+    path('cart/', include('cart.urls', namespace='cart')),  # Include cart app URLs
+
 
 
 ]
